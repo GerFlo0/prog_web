@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artesano de Jaumave</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            text-align: center;
+        }
+        .foto-artesano {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+        .imagenes img, .trabajos img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .carrusel {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .carrusel-container {
+            display: flex;
+            overflow: hidden;
+            width: 660px;
+        }
+        .carrusel img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            flex-shrink: 0;
+            display: none;
+        }
+        .carrusel img.active {
+            display: block;
+        }
+        .carrusel button {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let index = 0;
+            const images = document.querySelectorAll(".carrusel img");
+            function updateCarousel() {
+                images.forEach(img => img.classList.remove("active"));
+                for (let i = 0; i < 3; i++) {
+                    images[(index + i) % images.length].classList.add("active");
+                }
+            }
+            updateCarousel();
+            document.querySelector(".carrusel .prev").addEventListener("click", function() {
+                index = (index - 1 + images.length) % images.length;
+                updateCarousel();
+            });
+            document.querySelector(".carrusel .next").addEventListener("click", function() {
+                index = (index + 1) % images.length;
+                updateCarousel();
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Artesano de Jaumave</h1>
+    </header>
+    
+    <section id="presentacion">
+        <h2>Conoce a nuestro artesano</h2>
+        <p>Maestro en la fabricación de muebles, especializado en sillas de alta calidad.</p>
+    </section>
+    
+    <section id="trabajos-destacados">
+        <h2>Trabajos Destacados</h2>
+        <div class="trabajos">
+            <div class="trabajo"><img src="destacado1.jpg" alt="Trabajo Destacado 1"></div>
+            <div class="trabajo"><img src="destacado2.jpg" alt="Trabajo Destacado 2"></div>
+            <div class="trabajo"><img src="destacado3.jpg" alt="Trabajo Destacado 3"></div>
+        </div>
+    </section>
+    
+    <section id="carrusel">
+        <h2>Últimos Trabajos</h2>
+        <div class="carrusel">
+            <button class="prev">◀</button>
+            <div class="carrusel-container">
+                <img src="trabajo1.jpg" alt="Trabajo 1">
+                <img src="trabajo2.jpg" alt="Trabajo 2">
+                <img src="trabajo3.jpg" alt="Trabajo 3">
+                <img src="trabajo4.jpg" alt="Trabajo 4">
+                <img src="trabajo5.jpg" alt="Trabajo 5">
+            </div>
+            <button class="next">▶</button>
+        </div>
+        <br>
+        <a href="trabajos.html" class="boton">Ver más trabajos</a>
+    </section>
+    
+    <section id="historia">
+        <h2>Historia de Vida</h2>
+        <img src="artesano.jpg" alt="Foto del Artesano" class="foto-artesano">
+        <p>Desde joven, ha dedicado su vida a la carpintería, perfeccionando su técnica a lo largo de los años...</p>
+    </section>
+    
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Teléfono: 123-456-7890</p>
+        <p>Email: artesano@ejemplo.com</p>
+        <div id="mapa">
+            <iframe src="https://www.google.com/maps?q=Jaumave,+Tamaulipas&output=embed"></iframe>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Artesano de Jaumave</p>
+    </footer>
+</body>
+</html>
