@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Empleo CFE</title>
+    <link rel="stylesheet" href="act1_styles.css">
+</head>
+<body>
+    <form>
+        <h1>Solicitud de Empleo - CFE</h1>
+        <table>
+            <thead>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <label>Nombre:</label>
+                    </td>
+                    <td colspan="2">
+                        <label>Apellido Paterno:</label>
+                        <input type="text" name="apellido_paterno"><br>
+                    </td>
+                    <td colspan="2">
+                        <label>Apellido Materno:</label>
+                        <input type="text" name="apellido_materno"><br>
+                    </td>
+                    <td colspan="2">
+                        <label>Nombres:</label>
+                        <input type="text" name="nombre"><br>
+                    </td>
+                    <td colspan="2">
+                        <label>Sexo:</label>
+                        <input type="radio" name="sexo" value="M"> Masculino
+                        <input type="radio" name="sexo" value="F"> Femenino<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="8">
+                        <label>Lugar y Fecha de Nacimiento:</label>
+                        <input type="text" name="lugar_fecha_nacimiento"><br>
+                    </td>
+                    <td>
+                        <label>Edad:</label>
+                        <input type="number" name="edad"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6">
+                        <label>Nacionalidad:</label>
+                        <input type="text" name="nacionalidad"><br>                        
+                    </td>
+                    <td colspan="3">
+                        <label>Registro Federal de Causantes (RFC):</label>
+                        <input type="text" name="rfc"><br>                        
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <label>Número de Afiliación IMSS/ISSSTE:</label>
+                        <input type="text" name="num_imss"><br>
+                    </td>
+                    <td colspan="3">
+                        <label>CURP:</label>
+                        <input type="text" name="curp"><br>                        
+                    </td>
+                    <td colspan="3" rowspan="3">
+                        <label>Licencia de Manejo No.:</label>
+                        <input type="text" name="licencia_manejo"><br>
+                        
+                        <label>Fecha de Expedición:</label>
+                        <input type="date" name="fecha_expedicion"><br>
+                        
+                        <input type="radio" name="tipo_licencia" > Automovilista
+                        <input type="radio" name="tipo_licencia" > Chofer<br>                        
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6">
+                        <label>Número de Cartilla Militar:</label>
+                        <input type="text" name="cartilla_militar"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6">
+                        <label>Nombre de la persona que lo presenta en CFE:</label>
+                        <input type="text" name="persona_presenta"><br>                        
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" rowspan="3">
+                        <label>Estado Civil:</label>
+                        <input type="radio" name="estado civil" > Casado
+                        <input type="radio" name="estado civil" > Soltero
+                        <input type="radio" name="estado civil" > Viudo
+                        <input type="radio" name="estado civil" > Divorciado
+                        <input type="radio" name="estado civil" > Union_libre<br>                      
+                    </td>
+                    <td colspan="1">
+                        <label>Domicilio:</label>
+                    </td>
+                    <td colspan="2">
+                        <label>Calle:</label>
+                        <input type="text" name="calle"><br>                        
+                    </td>
+                    <td colspan="1">
+                        <label>Num:</label>
+                        <input type="number" name="num"><br>
+                    </td>
+                    <td colspan="1">
+                        <label>Zona:</label>
+                        <input type="text" name="zona"><br>                        
+                    </td>
+                    <td colspan="1">
+                        <label>Ciudad:</label>
+                        <input type="text" name="ciudad"><br>                        
+                    </td>
+                    <td colspan="1">
+                        <label>Telefono:</label>
+                        <input type="tel" name="telefono"><br>                        
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <label>Si es soltero vive con:</label>
+                        <input type="text" name="vive_con"><br>
+                    </td>
+                    <td colspan="3">
+                        <label>¿Vive en casa propia?</label>
+                        <input type="radio" name="casa_propia" value="si"> Sí
+                        <input type="radio" name="casa_propia" value="no"> No<br>                        
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="7">
+                        <label>En que domicilio o telefono se le puede localizar facilmente?</label>
+                        <input type="text" name="contacto"><br>                        
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h1>Historial Educativo</h1>
+        
+        <table>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>Grados de Instrucción</td>
+                <td>Años Cursados</td>
+                <td colspan="2">Nombre de la Escuela</td>
+                <td colspan="2">Dirección</td>
+                <td>Fechas</td>
+            </tr>
+            <tr>
+                <td>Primaria</td>
+                <td class="sel">
+                    <select id="primaria">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                    
+                </td>
+                <td><input type="text" name="nombre_escuela_primaria"></td>
+                <td><input type="text" name="direccion_primaria"></td>
+                <td>
+                    de: <input type="date" name="fecha_de_primaria">
+                    a: <input type="date" name="fecha_a_primaria">
+                </td>
+            </tr>
+            <tr>
+                <td>Secundaria o Prevocacional</td>
+                <td class="sel">
+                    <select id="secundaria">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </td>
+                <td><input type="text" name="nombre_escuela_secundaria"></td>
+                <td><input type="text" name="direccion_secundaria"></td>
+                <td>
+                    de: <input type="date" name="fecha_de_secundaria">
+                    a: <input type="date" name="fecha_a_secundaria">
+                </td>
+            </tr>
+            <tr>
+                <td>Preparatoria o Vocacional</td>
+                <td class="sel">
+                    <select id="preparatoria">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </td>
+                <td><input type="text" name="nombre_escuela_preparatoria"></td>
+                <td><input type="text" name="direccion_preparatoria"></td>
+                <td>
+                    de: <input type="date" name="fecha_de_preparatoria">
+                    a: <input type="date" name="fecha_a_preparatoria">
+                </td>
+            </tr>
+            <tr>
+                <td>Profesional</td>
+                <td class="sel">
+                    <select id="profesional">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </td>
+                <td><input type="text" name="nombre_escuela_profesional"></td>
+                <td><input type="text" name="direccion_profesional"></td>
+                <td>
+                    de: <input type="date" name="fecha_de_profesional">
+                    a: <input type="date" name="fecha_a_profesional">
+                </td>
+            </tr>
+            <tr>
+                <td>Post. Grados</td>
+                <td class="sel">
+                    <select id="postgrado">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </td>
+                <td><input type="text" name="nombre_escuela_postgrado"></td>
+                <td><input type="text" name="direccion_postgrado"></td>
+                <td>
+                    de: <input type="date" name="fecha_de_postgrado">
+                    a: <input type="date" name="fecha_a_postgrado">
+                </td>
+            </tr>
+            <tr>
+                <td>Estudios Comerciales</td>
+                <td class="sel">
+                    <select id="estcomercial">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </td>
+                <td><input type="text" name="nombre_escuela_comerciales"></td>
+                <td><input type="text" name="direccion_comerciales"></td>
+                <td>
+                    de: <input type="date" name="fecha_de_comerciales">
+                    a: <input type="date" name="fecha_a_comerciales">
+                </td>
+            </tr>
+            <tr>
+                <td>Artes y Oficios</td>
+                <td class="sel">
+                    <select id="artes">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+                <td><input type="text" name="nombre_escuela_artes"></td>
+                <td><input type="text" name="direccion_artes"></td>
+                <td>
+                    de: <input type="date" name="fecha_de_artes">
+                    a: <input type="date" name="fecha_a_artes">
+                </td>
+            </tr>
+            <tr>
+                <td>Cursos Especiales</td>
+                <td class="sel">
+                    <select id="cursos">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </td>
+                <td><input type="text" name="nombre_escuela_cursos"></td>
+                <td><input type="text" name="direccion_cursos"></td>
+                <td>
+                    de: <input type="date" name="fecha_de_cursos">
+                    a: <input type="date" name="fecha_a_cursos">
+                </td>
+            </tr>
+            <tr>
+                <td>Otros</td>
+                <td class="sel">
+                    <select id="otros">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>                    
+                </td>
+                <td><input type="text" name="nombre_escuela_otros"></td>
+                <td><input type="text" name="direccion_otros"></td>
+                <td>
+                    de: <input type="date" name="fecha_de">
+                    a: <input type="date" name="fecha_a_cursos">
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <label>¿Estudia actualmente?</label>
+                    <input type="text" name="estudia_actualmente"><br>
+                </td>
+                <td colspan="4">
+                    <label>¿En dónde?</label>
+                    <input type="text" name="donde_estudia"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Título Recibido:</label>
+                    <input type="text" name="titulo_recibido"><br>
+                </td>
+                <td colspan="2">
+                    <label>Cédula Profesional No:</label>
+                    <input type="text" name="cedula_profesional"><br>
+                </td>
+                <td colspan="2">
+                    <label>Carta de Pasante de:</label>
+                    <input type="text" name="carta_pasante"><br>
+                </td>
+            </tr>
+        </table>
+        
+        <div class="botones">
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Empleo - CFE</title>
+</head>
+<body>
+    <h1>Solicitud de Empleo</h1>
+    <p>Esta solicitud deberá ser llenada de su puño y letra y a tinta</p>
+    <form>
+        <fieldset>
+            <legend>Información Personal</legend>
+            <label for="apellidoPaterno">Apellido Paterno:</label>
+            <input type="text" id="apellidoPaterno" name="apellidoPaterno"><br><br>
+
+            <label for="apellidoMaterno">Apellido Materno:</label>
+            <input type="text" id="apellidoMaterno" name="apellidoMaterno"><br><br>
+
+            <label for="nombre">Nombre(s):</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+
+            <label for="sexo">Sexo:</label>
+            <input type="radio" id="masculino" name="sexo" value="M">
+            <label for="masculino">M</label>
+            <input type="radio" id="femenino" name="sexo" value="F">
+            <label for="femenino">F</label><br><br>
+
+            <label for="fechaNacimiento">Lugar y Fecha de Nacimiento:</label>
+            <input type="text" id="fechaNacimiento" name="fechaNacimiento"><br><br>
+
+            <label for="nacionalidad">Nacionalidad (Fecha de Naturalización, si es el caso):</label>
+            <input type="text" id="nacionalidad" name="nacionalidad"><br><br>
+
+            <label for="registroCausantes">Registro Federal de Causantes No.:</label>
+            <input type="text" id="registroCausantes" name="registroCausantes"><br><br>
+
+            <label for="imss">Num. de Filiación del I.M.S.S. o I.S.S.S.T.E.:</label>
+            <input type="text" id="imss" name="imss"><br><br>
+
+            <label for="curp">C.U.R.P.:</label>
+            <input type="text" id="curp" name="curp"><br><br>
+
+            <label for="licenciaManejo">Licencia de Manejo No.:</label>
+            <input type="text" id="licenciaManejo" name="licenciaManejo"><br><br>
+
+            <label for="fechaExpedicion">Fecha de Expedición:</label>
+            <input type="text" id="fechaExpedicion" name="fechaExpedicion"><br><br>
+
+            <label for="cartillaMilitar">Num. de Cartilla de Servicio Militar Nacional:</label>
+            <input type="text" id="cartillaMilitar" name="cartillaMilitar"><br><br>
+
+            <label for="presentaCFE">Nombre de la Persona que lo presenta en C.F.E.:</label>
+            <input type="text" id="presentaCFE" name="presentaCFE"><br><br>
+
+            <label for="automovilista">Automovilista</label>
+            <input type="checkbox" id="automovilista" name="automovilista">
+            <label for="chofer">Chofer</label>
+            <input type="checkbox" id="chofer" name="chofer"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Estado Civil</legend>
+            <input type="radio" id="casado" name="estadoCivil" value="casado">
+            <label for="casado">Casado</label>
+            <input type="radio" id="soltero" name="estadoCivil" value="soltero">
+            <label for="soltero">Soltero</label>
+            <input type="radio" id="viudo" name="estadoCivil" value="viudo">
+            <label for="viudo">Viudo</label>
+            <input type="radio" id="divorciado" name="estadoCivil" value="divorciado">
+            <label for="divorciado">Divorciado</label><br><br>
+        </fieldset>
+
+        <!-- Continúa agregando secciones según sea necesario -->
+    </form>
+</body>
+</html>

@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+}
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 3px 6px;
+    width: 80%;
+    align-self: center;
+    margin: auto;
+}
+
+th,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 3px 6px;
+}
+
+th {
+    display: none;
+}
+
+.botones {
+    text-align: center;
+}
+
+button {
+    margin: 15px;
+}
+
+label {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.sel {
+    text-align: center;
+}
