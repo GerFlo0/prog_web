@@ -1,0 +1,71 @@
+body {
+    background: url(./src/act2_fondo.jpg) no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.title, .terms{
+    color: aliceblue;
+}
+.form-container {
+    background: rgb(29, 28, 28);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 2);
+    width: 300px;
+    text-align: center;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: rgb(49, 45, 45);
+    text-decoration-color: aliceblue;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    box-sizing:border-box;
+    color : white;
+}
+input:focus {
+    border-color: #007bff;
+}
+.terms {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.terms input {
+    margin-right: 5px;
+    margin-left: 0px;
+}
+.register-btn {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+.register-btn:hover {
+    background: #0056b3;
+}
+.register-btn:active {
+    background: #004092;
+}
+.login-link {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+.login-link:hover {
+    text-decoration: underline;
+}

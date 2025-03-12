@@ -8,7 +8,8 @@
 </head>
 <body>
     <form>
-        <h1>Solicitud de Empleo - CFE</h1>
+        <h1>Solicitud de Empleo - CFE</h1>      
+        
         <table>
             <thead>
                 <th></th>
@@ -23,25 +24,27 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>
+                    <td class="sin-borde">
                         <label>Nombre:</label>
                     </td>
-                    <td colspan="2">
+                    <td colspan="2" class="sin-borde">
                         <label>Apellido Paterno:</label>
                         <input type="text" name="apellido_paterno"><br>
                     </td>
-                    <td colspan="2">
+                    <td colspan="2" class="sin-borde">
                         <label>Apellido Materno:</label>
                         <input type="text" name="apellido_materno"><br>
                     </td>
-                    <td colspan="2">
+                    <td colspan="2" class="sin-borde">
                         <label>Nombres:</label>
                         <input type="text" name="nombre"><br>
                     </td>
                     <td colspan="2">
                         <label>Sexo:</label>
-                        <input type="radio" name="sexo" value="M"> Masculino
-                        <input type="radio" name="sexo" value="F"> Femenino<br>
+                        <label class="radio">
+                            <input type="radio" name="sexo" value="M"> Masculino
+                            <input type="radio" name="sexo" value="F"> Femenino<br>
+                        </label>
                     </td>
                 </tr>
                 <tr>
@@ -97,7 +100,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2" rowspan="3">
+                    <td colspan="2" rowspan="3" >
                         <label>Estado Civil:</label>
                         <input type="radio" name="estado civil" > Casado
                         <input type="radio" name="estado civil" > Soltero
@@ -105,26 +108,26 @@
                         <input type="radio" name="estado civil" > Divorciado
                         <input type="radio" name="estado civil" > Union_libre<br>                      
                     </td>
-                    <td colspan="1">
+                    <td colspan="1" class="sin-borde">
                         <label>Domicilio:</label>
                     </td>
-                    <td colspan="2">
+                    <td colspan="2" class="sin-borde">
                         <label>Calle:</label>
                         <input type="text" name="calle"><br>                        
                     </td>
-                    <td colspan="1">
+                    <td colspan="1" class="sin-borde">
                         <label>Num:</label>
                         <input type="number" name="num"><br>
                     </td>
-                    <td colspan="1">
+                    <td colspan="1" class="sin-borde">
                         <label>Zona:</label>
                         <input type="text" name="zona"><br>                        
                     </td>
-                    <td colspan="1">
+                    <td colspan="1" class="sin-borde">
                         <label>Ciudad:</label>
                         <input type="text" name="ciudad"><br>                        
                     </td>
-                    <td colspan="1">
+                    <td colspan="1" class="sin-borde">
                         <label>Telefono:</label>
                         <input type="tel" name="telefono"><br>                        
                     </td>
@@ -136,8 +139,10 @@
                     </td>
                     <td colspan="3">
                         <label>¿Vive en casa propia?</label>
-                        <input type="radio" name="casa_propia" value="si"> Sí
-                        <input type="radio" name="casa_propia" value="no"> No<br>                        
+                        <label class="radio">
+                            <input type="radio" name="casa_propia" value="si"> Sí
+                            <input type="radio" name="casa_propia" value="no"> No<br>
+                        </label>                        
                     </td>
                 </tr>
                 <tr>
@@ -181,8 +186,8 @@
                     </select>
                     
                 </td>
-                <td><input type="text" name="nombre_escuela_primaria"></td>
-                <td><input type="text" name="direccion_primaria"></td>
+                <td colspan="2"><input type="text" name="nombre_escuela_primaria"></td>
+                <td colspan="2"><input type="text" name="direccion_primaria"></td>
                 <td>
                     de: <input type="date" name="fecha_de_primaria">
                     a: <input type="date" name="fecha_a_primaria">
@@ -197,8 +202,8 @@
                         <option value="3">3</option>
                     </select>
                 </td>
-                <td><input type="text" name="nombre_escuela_secundaria"></td>
-                <td><input type="text" name="direccion_secundaria"></td>
+                <td colspan="2"><input type="text" name="nombre_escuela_secundaria"></td>
+                <td colspan="2"><input type="text" name="direccion_secundaria"></td>
                 <td>
                     de: <input type="date" name="fecha_de_secundaria">
                     a: <input type="date" name="fecha_a_secundaria">
@@ -213,8 +218,8 @@
                         <option value="3">3</option>
                     </select>
                 </td>
-                <td><input type="text" name="nombre_escuela_preparatoria"></td>
-                <td><input type="text" name="direccion_preparatoria"></td>
+                <td colspan="2"><input type="text" name="nombre_escuela_preparatoria"></td>
+                <td colspan="2"><input type="text" name="direccion_preparatoria"></td>
                 <td>
                     de: <input type="date" name="fecha_de_preparatoria">
                     a: <input type="date" name="fecha_a_preparatoria">
@@ -233,8 +238,8 @@
                         <option value="7">7</option>
                     </select>
                 </td>
-                <td><input type="text" name="nombre_escuela_profesional"></td>
-                <td><input type="text" name="direccion_profesional"></td>
+                <td colspan="2"><input type="text" name="nombre_escuela_profesional"></td>
+                <td colspan="2"><input type="text" name="direccion_profesional"></td>
                 <td>
                     de: <input type="date" name="fecha_de_profesional">
                     a: <input type="date" name="fecha_a_profesional">
@@ -250,8 +255,8 @@
                         <option value="4">4</option>
                     </select>
                 </td>
-                <td><input type="text" name="nombre_escuela_postgrado"></td>
-                <td><input type="text" name="direccion_postgrado"></td>
+                <td colspan="2"><input type="text" name="nombre_escuela_postgrado"></td>
+                <td colspan="2"><input type="text" name="direccion_postgrado"></td>
                 <td>
                     de: <input type="date" name="fecha_de_postgrado">
                     a: <input type="date" name="fecha_a_postgrado">
@@ -269,8 +274,8 @@
                         <option value="6">6</option>
                     </select>
                 </td>
-                <td><input type="text" name="nombre_escuela_comerciales"></td>
-                <td><input type="text" name="direccion_comerciales"></td>
+                <td colspan="2"><input type="text" name="nombre_escuela_comerciales"></td>
+                <td colspan="2"><input type="text" name="direccion_comerciales"></td>
                 <td>
                     de: <input type="date" name="fecha_de_comerciales">
                     a: <input type="date" name="fecha_a_comerciales">
@@ -287,8 +292,8 @@
                         <option value="5">5</option>
                     </select>
                 </td>
-                <td><input type="text" name="nombre_escuela_artes"></td>
-                <td><input type="text" name="direccion_artes"></td>
+                <td colspan="2"><input type="text" name="nombre_escuela_artes"></td>
+                <td colspan="2"><input type="text" name="direccion_artes"></td>
                 <td>
                     de: <input type="date" name="fecha_de_artes">
                     a: <input type="date" name="fecha_a_artes">
@@ -303,8 +308,8 @@
                         <option value="3">3</option>
                     </select>
                 </td>
-                <td><input type="text" name="nombre_escuela_cursos"></td>
-                <td><input type="text" name="direccion_cursos"></td>
+                <td colspan="2"><input type="text" name="nombre_escuela_cursos"></td>
+                <td colspan="2"><input type="text" name="direccion_cursos"></td>
                 <td>
                     de: <input type="date" name="fecha_de_cursos">
                     a: <input type="date" name="fecha_a_cursos">
@@ -322,25 +327,25 @@
                         <option value="6">6</option>
                     </select>                    
                 </td>
-                <td><input type="text" name="nombre_escuela_otros"></td>
-                <td><input type="text" name="direccion_otros"></td>
+                <td colspan="2"><input type="text" name="nombre_escuela_otros"></td>
+                <td colspan="2"><input type="text" name="direccion_otros"></td>
                 <td>
                     de: <input type="date" name="fecha_de">
                     a: <input type="date" name="fecha_a_cursos">
                 </td>
             </tr>
             <tr>
-                <td >
-                    <label>¿Estudia actualmente?</label>
+                <td colspan="4">
+                    <label>¿Estudia actualmente?  Que estudia?</label>
                     <input type="text" name="estudia_actualmente"><br>
                 </td>
-                <td colspan="4">
+                <td colspan="3">
                     <label>¿En dónde?</label>
                     <input type="text" name="donde_estudia"><br>
                 </td>
             </tr>
             <tr>
-                <td>
+                <td colspan="2">
                     <label>Título Recibido:</label>
                     <input type="text" name="titulo_recibido"><br>
                 </td>
@@ -348,7 +353,7 @@
                     <label>Cédula Profesional No:</label>
                     <input type="text" name="cedula_profesional"><br>
                 </td>
-                <td colspan="2">
+                <td colspan="3">
                     <label>Carta de Pasante de:</label>
                     <input type="text" name="carta_pasante"><br>
                 </td>

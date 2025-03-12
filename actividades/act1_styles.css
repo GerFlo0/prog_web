@@ -1,20 +1,27 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-image: url(./src/back.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     display: flex;
 }
 
 table{
-    border: 1px solid black;
     border-collapse: collapse;
+    width: 100%;
     padding: 3px 6px;
     width: 80%;
     align-self: center;
     margin: auto;
+    border-radius: 25px;
+    background-color: rgb(224, 224, 224);
+    padding: 10px;
 }
 
 th,td {
-    border: 1px solid black;
+    border-radius: 25px;
     border-collapse: collapse;
     padding: 3px 6px;
 }
@@ -45,4 +52,20 @@ input {
 
 .sel {
     text-align: center;
+}
+
+h1 {
+    width: 80%;
+    margin: 0 auto 10px auto;
+    text-align: left;
+}
+
+.sin-borde {
+    border: none;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
