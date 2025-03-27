@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de hamburguesa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="hamburguesa.png" alt="Hamburguesa">
+        <h1>FLORES TORRES JOSE GERARDO</h1>
+        <p>Al suscribirte recibirás un cupón para tu próxima compra</p>
+        
+        <form>
+            <label for="telefono">Número de teléfono</label>
+            <input type="tel" id="telefono" required>
+
+            <label for="nombre">Nombre(s)</label>
+            <input type="text" id="nombre" required>
+
+            <label for="ciudad">Ciudad</label>
+            <input type="text" id="ciudad" required>
+
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" required>
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="terminos" required>
+                <label for="terminos">Me gustaría recibir mensajes de texto y acepto los Términos de servicio & Política de privacidad.</label>
+            </div>
+
+            <button type="submit">¡Suscribirme!</button>
+        </form>
+
+        <p class="terms">*Aplican términos y condiciones*</p>
+    </div>
+</body>
+</html>

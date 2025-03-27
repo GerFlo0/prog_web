@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Estructuras de Control</title>
+</head>
+<body>
+    <h1>Ejemplo de Estructuras de Control</h1>
+    <script>
+        let opt = 1;
+        let if_else_val = 0;
+        while (opt < 5) {
+            switch (opt) {
+                case 1:
+                    alert(`SWITCH opción ${opt}\nIF else`);
+                    if_else_val = 11
+                    if (if_else_val > 10) {
+                        alert(`IF ELSE valor = ${if_else_val}\nvalor es mayor que 10`);
+                    } else {
+                        alert(`IF ELSE valor = ${if_else_val}\nEl valor es menor o igual que 10`);
+                    }
+                    break;
+                case 2:
+                    alert(`SWITCH opción ${opt}\nif ELSE`);
+                    if_else_val = 9
+                    if (if_else_val > 10) {
+                        alert(`IF ELSE valor = ${if_else_val}\nvalor es mayor que 10`);
+                    } else {
+                        alert(`IF ELSE valor = ${if_else_val}\nEl valor es menor o igual que 10`);
+                    }
+                    break;
+                case 3:
+                    for (let i = 0; i < 3; i++) {
+                        alert(`SWITCH opción ${opt}\nFOR (3 iteraciones)\nIteración número: ` + i);
+                    }
+                    break;
+                default:
+                    alert(`SWITCH opción ${opt} fuera de rango`);
+            }
+            opt++;
+        }
+    </script>
+</body>
+</html>
