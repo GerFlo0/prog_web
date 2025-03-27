@@ -10,7 +10,9 @@
     <script>
         let opt = 1;
         let if_else_val = 0;
+        let msg = "";
         while (opt < 5) {
+            alert(`WHILE vuelta ${opt}`);
             switch (opt) {
                 case 1:
                     alert(`SWITCH opción ${opt}\nIF else`);
@@ -31,9 +33,11 @@
                     }
                     break;
                 case 3:
+                    msg = `SWITCH opción ${opt}\nFOR (3 iteraciones)`;
                     for (let i = 0; i < 3; i++) {
-                        alert(`SWITCH opción ${opt}\nFOR (3 iteraciones)\nIteración número: ` + i);
+                        msg += (`\nIteración número: ` + (i + 1));
                     }
+                    alert(msg);
                     break;
                 default:
                     alert(`SWITCH opción ${opt} fuera de rango`);
