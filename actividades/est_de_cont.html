@@ -17,10 +17,10 @@
                 case 1:
                     alert(`SWITCH opción ${opt}\nIF else`);
                     if_else_val = 11
-                    if (if_else_val > 10) {
-                        alert(`IF ELSE valor = ${if_else_val}\nvalor es mayor que 10`);
+                    if (if_else_val > 18) {
+                        alert(`IF ELSE valor = ${if_else_val}\nmayor de edad`);
                     } else {
-                        alert(`IF ELSE valor = ${if_else_val}\nEl valor es menor o igual que 10`);
+                        alert(`IF ELSE valor = ${if_else_val}\nmenor de edad`);
                     }
                     break;
                 case 2:
@@ -35,7 +35,7 @@
                 case 3:
                     msg = `SWITCH opción ${opt}\nFOR (3 iteraciones)`;
                     for (let i = 0; i < 3; i++) {
-                        msg += (`\nIteración número: ` + (i + 1));
+                        msg += (`\nIteración número: ` + (i + 1)**2);
                     }
                     alert(msg);
                     break;

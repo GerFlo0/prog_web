@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Sueldo Neto</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Calculadora de Sueldo Neto</h2>
+        <form id="salaryForm">
+            <label>Nombre Completo:</label>
+            <input type="text" id="name" required>
+
+            <label>Fecha de Nacimiento:</label>
+            <input type="date" id="dob" value="2003-03-20" required>
+
+            <label>Sueldo Bruto ($):</label>
+            <input type="number" id="baseSalary" class="no-arrows" required>
+
+            <h3>Descuentos</h3>
+            <label>Luz ($):</label>
+            <input type="number" id="electricity" class="no-arrows">
+
+            <label>Agua ($):</label>
+            <input type="number" id="water" class="no-arrows">
+
+            <label>Renta ($):</label>
+            <input type="number" id="rent" class="no-arrows">
+
+            <button type="button" onclick="calculate()">Calcular</button>
+        </form>
+        
+        <h3>Sueldo Neto:</h3>
+        <p id="netSalary"></p>
+
+        <h3>Edad del Trabajador:</h3>
+        <p id="workerAge"></p>
+    </div>
+</body>
+</html>
